@@ -1,0 +1,13 @@
+h1 {
+    color: blue;
+}
+
+.my-class {
+    border-style: solid;
+
+}
+
+#btn-main {
+    margin: 1em;
+    padding: 1em;
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Anna",
+        "age": 13
+    },
+    {
+        "name": "Bertram",
+        "age": 42
+    },
+    {
+        "name": "Chris",
+        "age": 90
+    },
+    {
+        "name": "<script>alert('Don\\'t write insecure applications')",
+        "age": 36
+    }
+]
