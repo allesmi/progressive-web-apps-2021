@@ -8,7 +8,7 @@ Unterlagen zum Kurs "Grundlagen der Programmierung von Progressive Web Apps" am 
 
 Session | Thema | Folien | Übung
 ---|---|---|---
-1 | 
+1 | JavaScript Grundlagen | [intro.pdf](slides/intro.pdf) | [Wiederholung](src/01-wiederholung), [UserList](src/01)
 2 | 
 3 | 
 4 | 
