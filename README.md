@@ -9,7 +9,7 @@ Unterlagen zum Kurs "Grundlagen der Programmierung von Progressive Web Apps" am 
 Session | Thema | Folien | Übung
 ---|---|---|---
 1 | JavaScript Grundlagen | [intro.pdf](slides/intro.pdf) | [Wiederholung](src/01-wiederholung), [UserList](src/01)
-2 | 
+2 | URL Parameter, Geolocation API | [geolocation.pdf](slides/geolocation.pdf) | [URLSearchParams](src/02-url-parameter), [Geolocation](src/02)
 3 | 
 4 | 
 5 | 
