@@ -17,7 +17,6 @@ Session | Thema | Folien | Übung
 7 | 
 8 | 
 9 | 
-10 | 
 
 ## Links
 
