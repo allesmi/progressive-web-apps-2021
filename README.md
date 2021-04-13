@@ -18,3 +18,9 @@ Session | Thema | Folien | Übung
 8 | 
 9 | 
 10 | 
+
+## Links
+
+- [qrcode.js](https://davidshimjs.github.io/qrcodejs/) zum Erzeugen von QR Codes in JavaScript
+- [Instascan](https://github.com/schmich/instascan) zum Lesen von QR Codes
+- [Geolocation.watchPosition()](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/watchPosition) in der MDN
