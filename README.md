@@ -10,7 +10,7 @@ Session | Thema | Folien | Übung
 ---|---|---|---
 1 | JavaScript Grundlagen | [intro.pdf](slides/intro.pdf) | [Wiederholung](src/01-wiederholung), [UserList](src/01)
 2 | URL Parameter, Geolocation API | [geolocation.pdf](slides/geolocation.pdf) | [URLSearchParams](src/02-url-parameter), [Geolocation](src/02)
-3 | AJAX | [ajax.pdf](slides/ajax.pdf) | 
+3 | AJAX | [ajax.pdf](slides/ajax.pdf) | [POST mit fetch](src/03/post.js]
 4 | 
 5 | 
 6 | 
