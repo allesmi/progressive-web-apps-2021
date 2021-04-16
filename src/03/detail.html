@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendemasten Details</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <header>
+        <h1>Sendemasten Details</h1>
+    </header>
+
+    <main>
+        <div id="warn"></div>
+        <!-- TODO: Daten eines einzelnen Sendemasten mit der id "id" anzeigen.
+            API-Url: https://test.sunbeng.eu/api/towers/${id}
+        -->
+        <!-- Darstellung von name und range, kann durch den User verändert werden -->
+        <label>Name: <input type="text" id="inp-name"></label>
+        <label>Reichweite: <input type="number" id="inp-range"> Meter</label>
+
+        <!-- Darstellung von id, lat, lon, kann nicht durch den User verändert werden -->
+        <label>id: <input type="text" id="inp-id" readonly></label>
+        <label>Breitengrad: <input type="number" id="inp-lat" readonly></label>
+        <label>Längengrad: <input type="number" id="inp-lon" readonly></label>
+
+        <button id="btn-send">Senden</button>
+    </main>
+
+    <script src="js/detail-script.js"></script>
+</body>
+
+</html>
