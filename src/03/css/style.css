@@ -1,0 +1,15 @@
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+label input {
+    display: block;
+}
+
+.warning {
+    padding: 1rem;
+    border: 2px solid red;
+    background-color: salmon;
+    margin: 1rem;
+}
