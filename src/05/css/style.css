@@ -1,0 +1,30 @@
+#dogs li {
+    text-transform: capitalize;
+}
+
+h1,
+h2,
+h3 {
+    font-family: sans-serif;
+}
+
+@media (min-width: 768px) {
+    body {
+        width: 80%;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+}
+
+@media (prefers-colors-scheme: light) {
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
+
+/* 
+@media print {
+
+} */
