@@ -1,0 +1,22 @@
+div {
+  padding: 1rem;
+}
+
+#outer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+
+    background-color: #ccc;
+}
+
+#outer div {
+    background-color: sandybrown;
+    border: 1px solid black;
+}
+
+@media (min-width: 640px) {
+    #outer {
+        grid-template-columns: 1fr 1fr;
+    }
+}

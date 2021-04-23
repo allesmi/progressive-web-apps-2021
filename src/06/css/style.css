@@ -1,0 +1,13 @@
+#game {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.cell {
+    border: 1px solid black;
+    aspect-ratio: 1;
+}
+
+.alive {
+    background-color: seagreen;
+}
