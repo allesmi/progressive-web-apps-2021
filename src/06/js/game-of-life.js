@@ -1,4 +1,4 @@
-class GameOfLife {
+export class GameOfLife {
     // //    0 --- x ----> 9
     // //    |
     // //    |
@@ -20,19 +20,30 @@ class GameOfLife {
         this._game.style.gridTemplateColumns = `repeat(${this._columns}, 1fr)`;
         this.createGrid();
 
-        this._game.addEventListener('click', event => {
+        this._game.onclick = event => {
             if (event.target.classList.contains('cell')) {
                 event.target.classList.toggle('alive');
             }
-        });
+        };
     }
 
     createGrid() {
         this._game.innerHTML = '';
+
+        const isAspectRatioSupported = CSS.supports('aspect-ratio', '1');
+
         for (let i = 0; i < this._columns * this._columns; i++) {
             const cell = document.createElement('div');
             cell.classList.add('cell');
             cell.dataset.cellId = i;
+
+            if (!isAspectRatioSupported) {
+                const totalWidth = this._game.clientWidth;
+
+                const width = Math.floor(totalWidth / this._columns)
+                cell.style.width = `${width}px`;
+                cell.style.height = `${width}px`;
+            }
 
             this._game.appendChild(cell);
         }

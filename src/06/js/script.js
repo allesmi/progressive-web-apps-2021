@@ -1,3 +1,11 @@
+import { GameOfLife } from "./game-of-life.js";
+
+// Damit dieses Script funktioniert, wird die game-of-life.js benötigt
+
+// window.onbeforeunload = () => {
+//     return "before unload";
+// };
+
 let columns = 10;
 const game = document.querySelector('#game');
 
