@@ -135,4 +135,42 @@ export class GameOfLife {
         return document.querySelector(`.cell[data-cell-id="${y * this._columns + x}"]`)
             .classList.contains('alive');
     }
+
+    /**
+     * 
+     * @returns Den aktuellen Spielstand als Array
+     */
+    getGameState() {
+        const aliveCells = this._game.querySelectorAll('.alive');
+
+        const gameState = [];
+
+        for (let aliveCell of aliveCells) {
+            const cellId = parseInt(aliveCell.dataset.cellId);
+            gameState.push(cellId);
+        }
+
+        return gameState;
+    }
+
+    getColumns() {
+        return this._columns;
+    }
+
+    /**
+     * 
+     * @param {number[]} gameState 
+     */
+    setGameState(gameState) {
+        for (let cellId of gameState) {
+            this._game.querySelector(`.cell[data-cell-id="${cellId}"]`)
+                .classList.add('alive');
+        }
+    }
+}
+
+export const DEFAULT_SIZE = 10;
+
+export function hello() {
+    console.log('hello world');
 }

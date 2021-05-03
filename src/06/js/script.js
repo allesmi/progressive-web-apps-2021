@@ -1,10 +1,11 @@
-import { GameOfLife } from "./game-of-life.js";
+import { GameOfLife, hello } from "./game-of-life.js";
 
 // Damit dieses Script funktioniert, wird die game-of-life.js benötigt
 
 // window.onbeforeunload = () => {
 //     return "before unload";
 // };
+hello();
 
 let columns = 10;
 const game = document.querySelector('#game');
@@ -36,4 +37,19 @@ inpColumns.addEventListener('change', event => {
     const newColumns = parseInt(inpColumns.value);
 
     gol = new GameOfLife(newColumns, game);
+});
+
+document.querySelector('#btn-save').addEventListener('click', event => {
+    const gameState = gol.getGameState();
+
+    localStorage.setItem('gameState', JSON.stringify(gameState));
+    localStorage.setItem('gameSize', gol.getColumns());
+});
+
+document.querySelector('#btn-load').addEventListener('click', event => {
+    const gameState = JSON.parse(localStorage.getItem('gameState'));
+    const gameSize = parseInt(localStorage.getItem('gameSize'));
+
+    gol = new GameOfLife(gameSize, game);
+    gol.setGameState(gameState);
 });
