@@ -16,7 +16,7 @@ Session | Thema | Folien | Übung
 6 | async/await, CSS Grid | | [ServiceWorker mit async/await](src/05), [Game of Life](src/06)
 7 | ES6 class | | [Game of Life](src/06)
 8 | JSDoc, Ausblick auf node und npm | | [Game of Life](src/06)
-9 | 
+9 | Wiederholung, Prüfung | | [Wiederholung](src/09)
 
 ## Links
 
